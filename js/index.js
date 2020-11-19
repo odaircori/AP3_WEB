@@ -1,8 +1,12 @@
+let respostasCorretas = 0;
+
 function iniciarQuiz(){
-    botaoIniciar = document.getElementById("iniciar");
-    quiz = document.getElementById("quiz");
+    let botaoIniciar = document.getElementById("iniciar");
+    let quiz = document.getElementById("quiz");
+
+    quiz.hidden = false;
     
-    botaoIniciar.hidden = "true";
+    botaoIniciar.hidden = true;
     
     let perguntas = [];
     let respostas = [];
@@ -27,7 +31,7 @@ function iniciarQuiz(){
         respostas = [];
     })
 
-    quiz.innerHTML = perguntas.join(" ");
+    quiz.innerHTML = `<h3>Quiz</h3>${perguntas.join(" ")}`;
 }
 
 function checaResposta(event) {
@@ -37,20 +41,24 @@ function checaResposta(event) {
         if(perg.id == event.srcElement.name){
             perg.respostas.forEach( resp => {
                 if(resp.id === event.srcElement.id){
+                    
                     labels.forEach( label => {
                         if(label.title == perg.id && label.id === resp.id && resp.correta){
                             disableInput(label.title)
-                            console.log("Resposta Correta");
+                            respostasCorretas++;
+                            //console.log("Resposta Correta");
                             label.style.color = "#00ff00"
                         }else{
                             if(label.title == perg.id){
                                 disableInput(label.title)
-                                console.log("Resposta Incorreta");
+                              //  console.log("Resposta Incorreta");
                                 label.style.color = "#ff0000"                      
                             }
 
                         }
                     })
+
+                    todasRespondidas();
                 }
             })
         }
@@ -58,12 +66,41 @@ function checaResposta(event) {
 }
 
 function disableInput(id){
-    inputs = document.querySelectorAll('input');
+    let inputs = document.querySelectorAll('input');
 
     inputs.forEach( input => {
-        console.log(input);
         if(input.name == id){
             input.disabled = true;
         }
     })
+}
+
+function todasRespondidas(){
+    let inputs = document.querySelectorAll('input');
+    let inputsDesabilitados = 0;
+
+    inputs.forEach( input => {
+        if(input.disabled){
+            inputsDesabilitados++;
+        }
+    })
+
+    if(inputs.length === inputsDesabilitados){
+        resultado()
+    }
+}
+
+
+function resultado(){
+    let quiz = document.getElementById("quiz");
+    let nota = respostasCorretas / listaPerguntas.length * 100;
+
+    quiz.innerHTML = `Seu resultado é: <h1>${nota}</h1>`;
+
+    if(nota >= 7){
+        document.querySelectorAll('h1').style.color = '#00ff00';
+    }else{
+        document.querySelectorAll('h1').style.color = '#ff0000'
+    }
+    
 }
