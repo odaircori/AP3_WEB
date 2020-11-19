@@ -3,16 +3,34 @@ html, * {
     font-family: Tahoma, Verdana;
     margin:0;
     padding:0;
-    color:#fff
+    color:#fff;
+    font-size:14px;
 }
 
-.quiz {
-    width:50%;
-    height:50%;
-    margin:0 auto;
-    background-color: #000;
+.quiz, .nota {
+    width:35%;
+    margin:10px auto;
 }
 
-span {
+.quiz span {
     display:block;
+}
+
+h1 {
+    text-align:center;
+    font-size:30px;
+}
+
+h2 {
+    margin:5px 0;
+}
+
+h3 {
+    font-size:20px;
+    text-decoration: underline;
+    text-align:center
+}
+
+.resultado span {
+    color:#fff;
 }

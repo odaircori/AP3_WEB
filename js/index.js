@@ -93,14 +93,23 @@ function todasRespondidas(){
 
 function resultado(){
     let quiz = document.getElementById("quiz");
+    let resultado = document.getElementById("resultado");
+
     let nota = respostasCorretas / listaPerguntas.length * 100;
 
-    quiz.innerHTML = `Seu resultado é: <h1>${nota}</h1>`;
+    quiz.hidden = true;
+    resultado.hidden = false;
 
-    if(nota >= 7){
-        document.querySelectorAll('h1').style.color = '#00ff00';
+    let h1 =  document.querySelectorAll("h1");
+
+    console.log(h1);
+
+    if(nota >= 70){
+        h1[0].style.color = '#00ff00';
+        h1[0].innerHTML = `<span>Sua nota é</span> ${nota}<span>, parabéns!</span>`;
     }else{
-        document.querySelectorAll('h1').style.color = '#ff0000'
+        h1[0].style.color = '#ff0000'
+        h1[0].innerHTML = `<span>Sua nota é</span> ${nota}<span>, procure se informar!</span>`;
     }
     
 }
