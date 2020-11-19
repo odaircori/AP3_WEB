@@ -1,7 +1,7 @@
 const listaPerguntas = [
     {
         "id": 1,
-        "pergunta": "Qual das opções abaixo não corresponde aos sintomas comuns da COVID-19",
+        "pergunta": "1 - Qual das opções abaixo não corresponde aos sintomas comuns da COVID-19",
         "respostas": [
             {
                 "resposta": "A) Dispneia",
@@ -28,7 +28,7 @@ const listaPerguntas = [
     },
     {
         "id": 2,
-        "pergunta": "A febre alta é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "2 - A febre alta é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -55,7 +55,7 @@ const listaPerguntas = [
     },
     {
         "id": 3,
-        "pergunta": "O nariz a pingar é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19? ",
+        "pergunta": "3 - O nariz a pingar é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19? ",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -82,7 +82,7 @@ const listaPerguntas = [
     },
     {
         "id": 4,
-        "pergunta": "A sensação de fadiga é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "4 - A sensação de fadiga é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -109,7 +109,7 @@ const listaPerguntas = [
     },
     {
         "id": 5,
-        "pergunta": "A  dor de garganta é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "5 - A  dor de garganta é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -136,7 +136,7 @@ const listaPerguntas = [
     },
     {
         "id": 6,
-        "pergunta": "A falta de ar é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "6 - A falta de ar é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -163,7 +163,7 @@ const listaPerguntas = [
     },
     {
         "id": 7,
-        "pergunta": "A dor de cabeça é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "7 - A dor de cabeça é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -190,7 +190,7 @@ const listaPerguntas = [
     },
     {
         "id": 8,
-        "pergunta": "A tosse seca é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "8 - A tosse seca é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -217,7 +217,7 @@ const listaPerguntas = [
     },
     {
         "id": 9,
-        "pergunta": "A diarreia é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "9 - A diarreia é um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
@@ -243,7 +243,7 @@ const listaPerguntas = [
     },
     {
         "id": 10,
-        "pergunta": "Espirros são um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
+        "pergunta": "10 - Espirros são um sintoma comum, ocasional, raro ou ligeiro nos infetados com COVID-19?",
         "respostas": [
             {
                 "resposta": "A) Comum",
