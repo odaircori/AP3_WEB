@@ -1,12 +1,14 @@
 let respostasCorretas = 0;
 
 function iniciarQuiz(){
-    let botaoIniciar = document.getElementById("iniciar");
+    let botaoIniciar = document.getElementById("botao");
+    let index = document.getElementById("index");
     let quiz = document.getElementById("quiz");
 
     quiz.hidden = false;
     
     botaoIniciar.hidden = true;
+    index.hidden = true;
     
     let perguntas = [];
     let respostas = [];
