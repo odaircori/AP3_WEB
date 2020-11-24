@@ -23,7 +23,7 @@ html, * {
     margin:0 auto;
 }
 
-.quiz, .nota {
+.quiz {
     width:50%;
     margin:10px auto;
 }
@@ -68,6 +68,8 @@ button {
 
 .nota {
     height:400px;
+    width:500px;
+    margin:0 auto;
     background-size:cover;
     background-repeat:no-repeat;
 }
